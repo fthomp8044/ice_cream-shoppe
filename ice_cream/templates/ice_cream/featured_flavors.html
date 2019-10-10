@@ -1,0 +1,9 @@
+{% extends 'ice_cream/base.html' %}
+{%  block content %}
+<h4>Featured Flavors:</h4>
+{% for ice_cream in ice_cream_list %}
+<ul>
+  <li>{{ice_cream.flavor}}</li>
+</ul>
+{% endfor %}
+{% endblock content %}
